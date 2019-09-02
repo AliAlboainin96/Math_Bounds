@@ -3,6 +3,7 @@ import time
 
 def cls():
     os.system('Cls ' if os.name =='nt' else 'clear')
+
 def hold():
     time.sleep(999999)
     input()
@@ -53,7 +54,8 @@ def sf_func():
      number = round(number_input,scale_factor)
      print(number)
 
-user_input = input("1)Inquality\n2)S.F\n\n")
+user_input = input("1)Inquality\n2)S.F\n3)Credits\n")
+
 
 if user_input == '1':
    main()
@@ -62,5 +64,7 @@ if user_input == '1':
 elif user_input == '2':
     sf_func()
  
-
-            
+elif user_input == '3':
+    cls()
+    print('Author:Ali Alboainin\nLevel: 9A\nPackage = ["MathBound"]\nVersion: 1.0   ')
+    hold()        
