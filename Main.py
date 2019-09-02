@@ -19,21 +19,24 @@ def main():
     main_ub = main_num + max_err
     main_lb = main_num - max_err
     
-    main_ux = round(main_ub, 2)
-    main_lx = round(main_lb, 2)
+    main_ux = round(main_ub, 3)
+    main_lx = round(main_lb, 3)
 
     print("\nUpper Bound: {0} \n\nLower Bound: {1}".format(main_ux,main_lx))
 
     print("\nInquality: \n{0} ≤ n < {1}\n\n\n".format(main_lx,main_ux))
 
-    main_min = main_num - 1
-    main_max = main_num + 1
+    main_min = main_num - 0.1
+    main_max = main_num + 0.1
+    
+    main_xin = round(main_min,3)
+    main_xax = round(main_max,3)
 
     num_line = ("●","ᴏ")
 
     print("                ",num_line[0],"--------------------------------",num_line[1])
     print("     .——————————————————————————————————————————————————————————————.")
-    print(" ",main_min,"         ",main_lx,"             ",main_num,"            ",main_ux,"            ",main_max)
+    print(" ",main_xin,"         ",main_lx,"             ",main_num,"            ",main_ux,"            ",main_xax)
         
 
 
